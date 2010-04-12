@@ -1,0 +1,145 @@
+/* CityDesk default style sheet */
+
+
+/* Basic HTML Element Style */
+body {
+	background-color: #fff;
+	font-size: small;
+	font-family : verdana, tahoma, arial, sans-serif;
+	/*font: small georgia, 'Times New Roman', serif; */
+	text-align: left;
+	background-image: url(../../Virtus/Images/virtus-mouse.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+h1 {
+	font: italic 32px georgia, 'times new roman', sans-serif;
+	margin: 0px;
+}
+h2 {
+	font: bold 10px verdana, tahoma, arial, sans-serif;
+	padding: 0 0 0px 0;
+	margin: 0 0 0px 0;
+	/*border-bottom: double 4px #078;*/
+}
+h3 {
+	font-size: 18px;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/*div { border: 1px solid red; }*/
+
+/*Structural elements */
+div#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 924px;
+}
+
+#sidebar {
+	width: 180px;
+	padding: 1em 5px 1em 5px;
+	margin: 0 0 10px 10px;
+	border: double 4px #CCD9DB;
+	background-color: #D3DEE0;
+	float: right;
+}
+
+#menu {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	float: left; width: 15%; margin: 2em 0 0 1px;
+	list-style-type: none;
+	padding: 0;
+	text-align: left;
+	background-color: #BDCBDE;
+}
+
+#menu ul.level1 {
+	list-style:none;
+	margin: 10px;
+	padding: 0;
+}
+
+#menu ul.level2 {
+	list-style: none;
+	margin:0px;
+	margin-left: 20px;
+	padding: 0;
+}
+	
+#menu ul.level1 li { padding: 1em 0em 0em 0em; }
+#menu ul.level2 li { padding: 0px; }
+	
+#menu ul.level1 a {text-decoration: none;}
+#menu ul.level2 a {text-decoration: none;}
+	
+#menu ul.level1 a:link {color: Black;}
+#menu ul.level2 a:link {color: Black;}
+
+#menu ul.level1 a:visited { color: #737373; /*: rgb(80%,40%,0%);*/}
+#menu ul.level2 a:visited { color: #737373; /*rgb(80%,40%,100%);*/}
+	
+#menu ul.level1 a:hover {color: Black; background: #BDCBDE;  text-decoration: underline;  }
+#menu ul.level2 a:hover {color: Black; background: #BDCBDE;  text-decoration: underline; }
+	
+
+#articleBody{ 
+	/*float: left;*/
+	text-align: left;
+	margin: 1em 1% 1em 17%;
+	padding: 0;
+}
+
+/* text effects */
+em.title {
+	text-decoration: underline;
+}
+#articleList p {
+	margin: 0 0 25px 0;
+}
+#articleList h3 {
+	font: 8px verdana, tahoma, arial, sans-serif;
+	margin: 0px;
+}
+
+h3.version {
+	font: italic bold 16px verdana, tahoma, arial, sans-serif;
+	border-top: 1px solid Black;
+	padding-top: 1em;
+}
+
+h4.changeTitle {
+	font: normal bold 12px verdana, tahoma, arial, sans-serif; 
+}
+
+p.changeDesc {
+	font: normal normal 12px verdana, tahoma, arial, sans-serif; 
+}
+
+label,input, textarea {
+	display: block;
+	width: 250px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+label {
+	text-align: right;
+	width: 175px;
+	padding-right: 20px;
+}
+
+br {
+	clear: left;
+}
+
+form em {
+  font-weight: bold;
+  color: #f00;
+}

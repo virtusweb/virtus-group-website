@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="Fog Creek CityDesk 2.0.25" />
+<meta name="citydesk" content="8616157C/71" />
+<title>Virtus Group - Historia de los cambios a xLab</title>
+	<link rel="stylesheet" type="text/css" href="../Virtus/StyleSheets/basic.css" title="default" media="screen" />
+</head>
+<body id="citydesk-template">
+
+<div id="container">
+
+	<h2><a href="../index.html"><img alt="" src="../Virtus/Images/virtus-group.gif" border="0" /></a></h2>
+		<div id="menu">
+<ul class="level1">
+<li><a href="../index.html">Virtus Group</a></li>
+<li><a href="../rail/index.html">Virtus Rail</a>
+<ul class="level2">
+<li><a href="../hojadetrenes/index.html">Hoja de Trenes</a></li>
+<li><a href="../cct/index.html">CCT</a></li>
+<li><a href="../interaction/index.html">Interaction</a></li>
+</ul>
+</li>
+<li><a href="../medical/index.html">Virtus Medical</a>
+<ul class="level2">
+<li><a href="../xhosp/index.html">xHosp</a></li>
+<li><a href="index.html">xLab</a></li>
+<li><a href="../xblood/index.html">xBlood</a></li>
+<li><a href="../xray/index.html">xRay</a></li>
+</ul>
+</li>
+<li><a href="../consulting/index.html">Virtus Consulting</a>
+<ul class="level2">
+<li><a href="../commset/index.html">CommSet</a></li>
+</ul>
+</li>
+<li><a href="../Virtus/Contacto.html">Contacto</a>
+</li>
+</ul>
+</div>
+
+	<div id="articleBody">
+
+		
+		<h3>Historia de los cambios a xLab</h3>
+		
+	
+		
+	
+		<h3 class="version">xLab: 1.4.25 - 2005/11/11</h3>
+
+<h4 class="changeTitle">874: Agregar funcionalidad de guardar y recuperar un archivo RTF al xLab (similar al xRay)</h4>
+<p class="changeDesc">En la pantalla de captura de resultados por paciente se agregaron las funciones tanto de poder almacenar en disco un resultado tipo texto como archivo RTF para usarlo posteriormente como machote así como poder recuperar un archivo RTF para utilizarlo dentro de un resultado por medio de los botones de "guardar en disco" y "recuperar en disco".</p>
+
+<h4 class="changeTitle">835: Cuando se asigna un beneficio al paciente debería actualizar el status de patientpayment para liberar sus estudios en Internet</h4>
+<p class="changeDesc">Cuando le den un beneficio especial al paciente como una cortesia un descuento, etc. el sistema ya actualiza el status de "cuenta pagada" para liberar los resultados por internet.</p> 
+
+<h3 class="version">xLab: 1.4.24 - 2005/10/14</h3>
+
+<h4 class="changeTitle">822: Agregar filtro por grupo de prestacion en el reporte de Pacientes por dia</h4>
+<p class="changeDesc">Se agregó el criterio de Grupo de prestación al reporte de pacientes por día</p>
+
+<h4 class="changeTitle">663: Error al hacer click sobre la imagen del boton de funcion en la captura de resultados</h4>
+<p class="changeDesc">Se corrigió el siguiente error: En la pantalla captura de resultados al hacer click sobre la imagen de las teclas de funcion. Solo sucede si no hay datos del paciente en el encabezado.</p> 
+
+<h4 class="changeTitle">813: La Consulta de órdenes de laboratorio no muestra resultados con el filtro fecha de entrega</h4>
+<p class="changeDesc">Ya permite poner como criterio de consulta de órdenes la fecha de entrega.</p>
+
+<h3 class="version">xLab: 1.4.23 - 2005/08/26</h3>
+
+<h4 class="changeTitle">651: Error en captura de precios</h4>
+<p class="changeDesc">Se corrigió el siguiente error: En el Catalogo de Prestaciones&nbsp; ya se tiene asignado un precio, si al entrar a modificarlo en lugar de modificarlo se borra el precio(se deja en blanco la caja) y se oprime el boton de guardar aparece el siguiente error. Run-time error Type mismatch</p>
+						
+<h4 class="changeTitle">629: Agregar un tipo de datos que permita la captura de un texto largo y se vea bien en el reporte de resultados</h4>
+<p class="changeDesc">Se agregó un tipo de datos LONGTEXT para los componentes (analitos) de una prueba que te permite capturar el resultado de ese analito como un texto de hasta 1024 caracteres y al imprimirlo pueda ocupar varias columnas para verse más estético.</p>
+						
+<h4 class="changeTitle">513: Error en la pantalla de corte de caja cuando no se pone cantidad al tipo de pago.</h4>
+<p class="changeDesc">Cuando el importe es cero, el sistema mandará un mensaje indicando que no hay pagos con monto mayor a cero.</p>
+
+<h3 class="version">xLab: 1.4.22 - 2005/07/15</h3>
+
+<h4 class="changeTitle">543: Agregar la pantalla de Pacientes de Seguros</h4>
+<p class="changeDesc">Se agregó la pantalla de pacientes de seguros.</p>
+
+<h3 class="version">xLab: 1.4.21 - 2005/07/10</h3>
+					
+<h4 class="changeTitle">526: Agregar el email y la contraseña en la impresion de la orden</h4>
+<p class="changeDesc">Se agregaron los datos de email y contraseña en la impresión de LabReceipt y de PatientOrder</p>
+						
+<h4 class="changeTitle">531: La version 1.4.20 no manda los datos del paciente al labreceipt</h4>
+<p class="changeDesc">Se resolvió el siguiente bug: No manda los datos del paciente al imprimir el comprobante LabReceipt</p>
+
+<h3 class="version">xLab: 1.4.20 - 2005/06/30</h3>
+					
+<h4 class="changeTitle">521: Agregar la pantalla de Consulta de Abonos de Pacientes</h4>
+<p class="changeDesc">Se agregó la pantalla de consulta de abonos de los pacientes para que tengan la opcion de reimprimir el comprobante del abono.</p>
+						
+<h4 class="changeTitle">522: Error en la pantalla de Refacturacion</h4>
+<p class="changeDesc">Se resolvió el siguiente error en la pantalla de Refacturacion: Al presionar el boton Refacturacion,&nbsp; aparece el error "Run-time&nbsp; error 13. Type mismatch".&nbsp; </p>
+
+
+<h3 class="version">xLab: 1.4.19 - 2005/06/24</h3>
+					
+<h4 class="changeTitle">502: Error en la impresion de ordenes a pacientes</h4>
+<p class="changeDesc">Se resolvió el siguiente bug: En la pantalla Impresion de ordenes, al presionar el boton Imprimir manda el error "Reporte PatientOrder. Error 13: Type Mismatch". </p>
+						
+<h4 class="changeTitle">503: El campo Outsource dela tabla TestCatalog no se actualiza cuando se selecciona una prueba para maquila externa</h4>
+<p class="changeDesc">Al asignar una prueba a un laboratorio de referencia automaticamente actualiza el campo de maquila externa del catálogo de pruebas.</p>
+
+<h3 class="version">xLab: 1.4.18 - 2005/06/17</h3>
+
+<h4 class="changeTitle">486: Error en el reporte de Corte de Corte de Caja</h4>
+<p class="changeDesc">Se resolvió el error Run-Time 10 al generar el reporte de corte de caja.</p>
+
+<h3 class="version">xLab: 1.4.17 - 2005/06/17</h3>
+
+<h4 class="changeTitle">457: Agregar campos de edad y sexo del paciente en la pantalla de Revision de Resultados</h4>
+<p class="changeDesc">Se agregaron los campos de edad y sexo del paciente en la pantalla de revisión de resultados.</p>
+
+<!-- Start of StatCounter Code -->
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var sc_project=306503; 
+var sc_partition=1; 
+//]]>
+</script>
+
+<script language="javascript" src="http://www.statcounter.com/counter/counter.js" type="text/javascript">
+</script><noscript><a href="http://www.statcounter.com" target="_blank"><img alt="hit counter" src="http://c2.statcounter.com/counter.php?sc_project=306503&amp;java=0" border="0" /></a> </noscript>
+<!-- End of StatCounter Code -->
+
+	
+		
+		<p><em></em></p>
+		
+	</div>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-163328-1";
+urchinTracker();
+</script>
+
+</body>
+</html>
+
+   

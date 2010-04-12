@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="Fog Creek CityDesk 2.0.25" />
+<meta name="citydesk" content="8616157C/66" />
+<title>Virtus Group - Guía rápida de Commset</title>
+	<link rel="stylesheet" type="text/css" href="../../Virtus/StyleSheets/basic.css" title="default" media="screen" />
+</head>
+<body id="citydesk-template">
+
+<div id="container">
+
+	<h2><a href="../../index.html"><img alt="" src="../../Virtus/Images/virtus-group.gif" border="0" /></a></h2>
+		<div id="menu">
+<ul class="level1">
+<li><a href="../../index.html">Virtus Group</a></li>
+<li><a href="../../rail/index.html">Virtus Rail</a>
+<ul class="level2">
+<li><a href="../../hojadetrenes/index.html">Hoja de Trenes</a></li>
+<li><a href="../../cct/index.html">CCT</a></li>
+<li><a href="../../interaction/index.html">Interaction</a></li>
+</ul>
+</li>
+<li><a href="../../medical/index.html">Virtus Medical</a>
+<ul class="level2">
+<li><a href="../../xhosp/index.html">xHosp</a></li>
+<li><a href="../../xlab/index.html">xLab</a></li>
+<li><a href="../../xblood/index.html">xBlood</a></li>
+<li><a href="../../xray/index.html">xRay</a></li>
+</ul>
+</li>
+<li><a href="../../consulting/index.html">Virtus Consulting</a>
+<ul class="level2">
+<li><a href="../index.html">CommSet</a></li>
+</ul>
+</li>
+<li><a href="../../Virtus/Contacto.html">Contacto</a>
+</li>
+</ul>
+</div>
+
+	<div id="articleBody">
+
+		
+		<h3>Guía rápida de Commset</h3>
+		
+	
+		
+	
+		<p>En esta guía rápida se demuestran de manera práctica las principales funciones de CommSet. Si usted ya compró CommSet puede usar esta guía para aprender a usarlo rápidamente. Si no ha comprado CommSet aún, puede obtener la versión de demostración y conocer la funcionalidad del programa.</p>
+<p><strong>Obteniendo e instalando CommSet</strong></p>
+<p>Obtenga el archivo de instalación de CommSet&nbsp;<a href="../../commset/demo/CommSet_228.exe">CommSet_228.exe</a>, es un archivo de 4.22 MB.</p>
+<p>Corra el archivo para instalar CommSet. Haciendo clic en todas las ventanas instalará los archivos de CommSet en C:\Commset, agregará un icono en su escritorio y agregará una nueva opción en el menú de programas de Windows.</p>
+<p><strong>Corriendo Commset</strong></p>
+<p><font color="#FF0000">Esta guía rápida está basada en la versión de demostración de CommSet. Si usted ya compró una licencia de CommSet, desconecte la llave de protección antes de correr CommSet para que éste inicie en modo de</font> <font color="#FF0000">demostración.</font></p>
+<p>Corra CommSet haciendo doble-clic en el icono de su escritorio o seleccionando CommSet del menú de programas de Windows (Inicio-Programas-CommSet).</p>
+<p>Cuando CommSet inicia y se da cuenta de que no tiene instalada la llave de protección, inicia en modo de demostración. La siguiente ventana aparece indicando que usted está en modo de demostración.</p><p align="center"><img height="158" alt="" src="DemoLogin.png" width="345" border="0" /></p>
+<p>En el modo de demostración CommSet no usa el puerto serial, los bytes del puerto 1 se envían internamente al puerto 2 y viceversa.</p>
+<p>Presione el botón Aceptar para cerrar la ventana.</p>
+<p><strong>Ventana de configuración</strong></p>
+<p>Cuando CommSet inicia, despliega la ventana de configuración. Contiene inicialmente la configuración de un canal en modo maestro con protocolo DNP 3.0.</p><p align="center"><img height="327" alt="" src="Configuration.png" width="234" border="0" /></p>
+<p>El icono del fólder &nbsp;<img height="14" alt="" src="folder.gif" width="16" border="0" />&nbsp;corresponde al canal. En el siguiente nivel, abajo del fólder, aparecen cinco íconos.</p>
+<ul>
+<li><img height="16" alt="" src="master.gif" width="16" border="0" />&nbsp;Modo maestro DNP 3.0
+</li>
+<li><img style="WIDTH: 15px; HEIGHT: 16px" height="16" alt="" src="protocol.gif" width="16" border="0" />&nbsp;DNP 3.0 Aplicación
+</li>
+<li><img height="16" alt="" src="protocol.gif" width="16" border="0" />&nbsp;DNP 3.0 Transporte
+</li>
+<li><img height="16" alt="" src="protocol.gif" width="16" border="0" />&nbsp;DNP 3.0 Enlace
+</li>
+<li><img height="16" alt="" src="master.gif" width="16" border="0" />&nbsp;Modo maestro DNP 3.0 Enlace
+</li>
+<li><img height="16" alt="" src="port.gif" width="16" border="0" />&nbsp;Puerto
+</li>
+</ul>
+<p>Bajo los íconos de la capa de aplicación, capa de transporte, capa de enlace y protocolo, aparece el icono Histórico <img height="16" alt="" src="log.gif" width="16" border="0" />. Desde aquí podemos abrir las ventanas del histórico de mensajes para cada una de las capas del protocolo.</p>
+<p>Bajo el icono del Modo maestro DNP 3.0 aparece el icono Disp0 <img height="16" alt="" src="device.gif" width="16" border="0" />&nbsp;que corresponde con un dispositivo o Unidad Terminal Remota, el cual a su vez contiene dos íconos, el de Puntos <img height="16" alt="" src="points.gif" width="16" border="0" />&nbsp;y el de Controles <img height="16" alt="" src="controls.gif" width="16" border="0" />.</p>
+<p><strong>Creando nuevos comandos</strong></p>
+<p>La ventana para crear nuevos comandos se abre desde la ventana de configuración haciendo doble clic sobre el icono de Modo maestro DNP 3.0 <img height="16" alt="" src="master.gif" width="16" border="0" />. Al hacerlo aparece la ventana de modo maestro.</p><p align="center"><img height="288" alt="" src="MasterModeWindow.png" width="684" border="0" /></p>
+<p>Esta ventana muestra los comandos configurados. Inicialmente contiene un solo comando.</p>
+<p>Al presionar el botón derecho del mouse sobre cualquier área de esta ventana aparece el menú flotante.</p>
+<p>Presione el botón derecho del mouse sobre el área libre de esta ventana y seleccione la opción <strong>Nuevo comando</strong>. Aparecerá la siguiente ventana.</p><p align="center"><img height="410" alt="" src="CommandWindow.png" width="609" border="0" /></p>
+<p>Los campos <strong>Dir. Fuente</strong> y <strong>Dir. Destino</strong> contienen respectivamente las direcciones fuente y destino del mensaje. Deje estos campos con los valores que tienen en este momento.</p>
+<p>El campo <strong>Función</strong> contiene todos los códigos de función implementados, observe las opciones disponibles en este campo y seleccione la función <strong>1: Read</strong>.</p>
+<p>Ahora es necesario agregar los objetos para este mensaje.</p>
+<p>Presione el botón derecho del mouse sobre el campo de objetos para que aparezca el menú flotante y seleccione la opción <strong>Nuevo objeto</strong>. CommSet presenta la siguiente ventana para seleccionar el objeto, calificador y rango.</p><p align="center"><img height="353" alt="" src="ObjectWindow.png" width="662" border="0" /></p>
+<p>Observe las opciones disponibles en los campos de <strong>Objeto</strong> y <strong>Calificador</strong>. Note que las opciones del campo <strong>Calificador</strong> dependen del objeto seleccionado. Seleccione el objeto <strong>1,2: Binary input with status</strong> y el calificador <strong>0x00: Start &amp; Stop 8 bit index</strong>. Escriba 1 en el campo <strong>Inicio</strong> y 5 en el campo <strong>Fin</strong> y presione el botón <strong>Aceptar</strong>.</p>
+<p>CommSet regresa a la ventana de comandos. Escriba&nbsp;<strong>Binary inputs 1 to 5 from RTU 0</strong>&nbsp;en el campo <strong>Descripción</strong> y presione el botón <strong>Aceptar</strong>.</p><p align="center"><img height="410" alt="" src="CommandWindowFilled.png" width="609" border="0" /></p>
+<p>Es importante mencionar que a partir del código de función, CommSet solamente le permite seleccionar los objetos se pueden utilizar con este código. De la misma manera solo le permite seleccionar los calificadores que se pueden utilizar con el objeto seleccionado.</p>
+<p><strong>Enviando un comando</strong></p>
+<p>En la ventana del modo maestro seleccione el mensaje recién creado y presione el botón <strong>Enviar</strong>. Si observa las columnas a la derecha del mensaje notará que la columna <strong>Env</strong> y la columna <strong>No con</strong> ahora contienen un 1.Esto significa que el comando se envío (<strong>Env</strong>) una vez y que la UTR no contestó (<strong>No con</strong>).</p><p align="center"><img height="288" alt="" src="MasterModeWindowNoAnswer.png" width="684" border="0" /></p>
+<p>Para obtener una respuesta tenemos que simular una UTR. Por tanto, dejemos el modo maestro por un momento mientras configuramos un canal remoto. Cierre la ventana de modo maestro.</p>
+<p><strong>Creando un canal remoto</strong></p>
+<p>Para crear un nuevo canal, presione el botón derecho del mouse sobre el área libre bajo el canal en modo maestro de la ventana de configuración. Esto es algo difícil ya que hay que presionar el botón del mouse justo en el área correcta. La siguiente figura indica en donde debe estar el mouse.</p><p align="center"><img height="327" alt="" src="NewChannel.png" width="234" border="0" /></p>
+<p>CommSet desplegará la siguiente ventana para la configuración de canal.</p><p align="center"><img height="230" alt="" src="ChannelWindow.png" width="707" border="0" /></p>
+<p>Escriba <strong>Remote</strong> en el campo <strong>Id</strong>, escriba <strong>2</strong> en el campo <strong>Puerto,</strong> escoja la opción <strong>DNP 3.0</strong> en el campo <strong>Protocolo</strong> y escoja la opción <strong>Remota</strong> en el campo <strong>Modo</strong>. Con esto se crea un canal en modo remoto con protocolo DNP. Asegúrese que el puerto es 2, porque en el modo de demostración Commset conecta internamente el puerto 1 con el puerto 2. Al final la ventana debe quedar como se indica a continuación:</p><p align="center"><img height="230" alt="" src="ChannelWindowFilled.png" width="707" border="0" /></p>
+<p>Presione el botón <strong>Aceptar</strong>.</p>
+<p>El nuevo canal remoto aparece en la ventana de configuración. Si recorre la ventana hacia abajo debería ver algo como esto:</p><p align="center"><img height="327" alt="" src="ConfigurationWindowRemote.png" width="234" border="0" /></p>
+<p>El canal remoto quedó configurado, sin embargo, para obtener una respuesta es necesario primero crear una UTR.</p>
+<p><strong>Creando una nueva UTR</strong></p>
+<p>Presione el botón derecho del mouse sobre el icono <strong>Remoto, DNP 3.0</strong> &nbsp;<img height="16" alt="" src="remote.gif" width="16" border="0" />&nbsp;y seleccione la opción <strong>Nuevo Dispositivo</strong>. CommSet presenta ahora la siguiente ventana de configuración de dispositivos.</p><p align="center"><img height="244" alt="" src="DeviceWindow.png" width="519" border="0" /></p>
+<p>Escriba <strong>MyUTR</strong> en el campo <strong>Identificador</strong>, asegúrese que el campo <strong>Dirección</strong> contiene <strong>0</strong> y presione el botón <strong>Aceptar</strong>.</p>
+<p>Si expande la rama Remoto, DNP 3.0 en la ventana de configuración observará el siguiente contenido.</p><p align="center"><img height="327" alt="" src="ConfigurationRemoteDevice.png" width="234" border="0" /></p>
+<p>Acaba usted de crear la remota con dirección 0 en el canal remoto. Ahora podemos probar nuevamente nuestros comandos.</p>
+<p><strong>Obteniendo una respuesta</strong></p>
+<p>Haga doble clic sobre el icono <strong>Modo maestro DNP 3.0</strong> <img height="16" alt="" src="master.gif" width="16" border="0" />&nbsp;para desplegar nuevamente la ventana de comandos. Seleccione el mensaje <strong>Binary inputs 1 to 5 from RTU 0</strong> que creamos anteriormente y presione el botón <strong>Enviar</strong>.</p>
+<p>Si observa las columnas a la derecha del mensaje notará que la columna <strong>Env</strong> ahora contiene un 2 y la columna <strong>Con</strong> contiene un 1. Esto significa que ahora tenemos una respuesta de la UTR.</p>
+<p><strong>Observando el histórico de mensajes</strong></p>
+<p>Una vez que hemos establecido comunicaciones con una UTR, es posible observar el histórico de mensajes. Haga doble clic en el icono <strong>Histórico</strong> <img height="16" alt="" src="log.gif" width="16" border="0" />&nbsp;bajo el icono <strong>DNP 3.0 Aplicación</strong> <img height="16" alt="" src="protocol.gif" width="16" border="0" />&nbsp;en el canal maestro.</p>
+<p>CommSet desplegará la ventana con el histórico de la capa de aplicación.</p>
+<p>En esta ventana CommSet despliega los mensajes de la capa de aplicación en ambos sentidos. El primer y tercer mensaje son los comandos, el segundo y cuarto mensaje son las respuestas. Como podrá notar, el segundo mensaje indica que hubo un time out esperando la respuesta y que este es el último reintento para este comando. Esto sucedió porque en los pasos anteriores de esta guía enviamos un mensaje para una remota que no estaba configurada. Los time outs, reintentos y confirmaciones se pueden configurar independientemente para la capas de aplicación y de enlace.</p>
+<p>Seleccione la opción Detalles del lado derecho de la ventana. CommSet desplegará una ventana como la siguiente:</p><p align="center"><img height="496" alt="" src="AppLogCommandDetail.png" width="653" border="0" /></p>
+<p>La ventana de detalles muestra información adicional del mensaje seleccionado.</p>
+<p>Seleccione el último mensaje, éste es la respuesta que recibimos de la UTR.</p><p align="center"><img height="496" alt="" src="AppLogResponseDetail.png" width="653" border="0" /></p>
+<p>Como podrá notar, obtuvimos una repuesta de la UTR, sin embargo esta no contiene objetos de datos. Si observa las indicaciones internas notará que el mensaje tiene la indicación <strong>Object Unknown</strong> encendida. Esto quiere decir que la UTR no contiene el tipo de dato que le solicitamos.</p>
+<p>Recuerde que cuando creamos la UTR en el canal remoto, dejamos la cantidad de puntos en 0. Ahora es el momento de configurar los puntos en nuestra UTR.</p>
+<p><strong>Configurando puntos en la UTR</strong></p>
+<p>Recorra hacia abajo la ventana de configuración hasta que pueda ver la UTR que creamos anteriormente. Haga doble clic sobre el icono de la remota y CommSet desplegará la ventana de configuración de dispositivos. Configuraremos 8 puntos de cada tipo para esta UTR, por tanto escriba 8 en cada uno de los campos de <strong>Cantidad</strong>.</p><p align="center"><img height="244" alt="" src="DeviceWithPoints.png" width="519" border="0" /></p>
+<p>Presione el botón <strong>Aceptar</strong>. Ahora tenemos una UTR con ocho puntos de cada tipo.</p>
+<p><strong>Obteniendo una respuesta con datos</strong></p>
+<p>Si la ventana de comandos no está abierta, ábrala haciendo doble clic sobre el icono <strong>Modo maestro DNP 3.0 <img height="16" alt="" src="master.gif" width="16" border="0" /></strong>. Seleccione nuevamente el mensaje que creamos y presione el botón&nbsp;<strong>Enviar</strong>.&nbsp;</p>
+<p>Regrese a la ventana de <strong>Histórico</strong> de mensajes de la capa de aplicación y seleccione el último mensaje que debe ser la respuesta de la UTR. Observe la ventana de detalles, ahora la UTR contestó con la información de los datos que esperábamos, es decir con la información de los puntos binarios 1 a 5.</p>
+<p>Como podrá notar, todas las indicaciones internas están ahora apagadas y recibimos información de los puntos solicitados. Todos los puntos están en línea y tienen un estado lógico 0.</p>
+<p><strong>Cambiando valores de los puntos en la UTR</strong></p>
+<p>Haga doble clic en el icono Puntos bajo la UTR que creamos en el canal remoto. CommSet desplegará la siguiente ventana que muestra inicialmente las entradas binarias.</p><p align="center"><img height="301" alt="" src="DevicePoints.png" width="527" border="0" /></p>
+<p>Intente seleccionar diferentes tipos de puntos modificando el valor del campo en la parte superior de la ventana,</p>
+<p>Las opciones para Entradas Binarias, Salidas Binarias, Entradas Analógicas, Salidas Analógicas y Contadores muestran la información de los puntos que configuramos en la UTR.</p>
+<p>Las opciones Eventos Binarios, Eventos Analógicos y Eventos Contador no muestran datos. Esto se debe a que las colas de eventos están vacías en este momento. Cuando haya cambios en puntos configurados para generar eventos, automáticamente aparecerán datos en estas colas.</p>
+<p>Deje la opción <strong>Entradas Binarias</strong> seleccionada.</p>
+<p>Haga clic derecho sobre el identificador del tercer punto de la lista (EB_MyRTU_2) y seleccione la opción <strong>Valor</strong>. El LED a la izquierda del identificador cambia a color rojo.</p>
+<p>Haga clic derecho sobre el identificador del quinto punto (EB_MyRTU_4) y seleccione la opción <strong>Modifica Punto</strong>. CommSet presenta la siguiente ventana:</p><p align="center"><img height="274" alt="" src="BinaryInputModify.png" width="397" border="0" /></p>
+<p>En esta ventana se puede cambiar el nombre y la descripción de la entrada así como el texto que aparece para cada uno de los niveles lógicos. También se puede configurar si el punto genera alarmas y si los cambios de estado se almacenan en la cola de eventos. Finalmente puede cambiar las banderas del protocolo DNP correspondientes a este punto.</p>
+<p>Seleccione la pestaña <strong>Banderas</strong>, marque la opción <strong>Chatter filter</strong> y presione el botón <strong>OK</strong>.&nbsp;</p>
+<p>Regrese a la ventana de comandos y envíe el mensaje una vez más.</p>
+<p>Vaya a la ventana de histórico y recorra la ventana de detalles hasta abajo. Verifique que el estado de la entrada binaria 2 esté encendido y que el estado del "chatter filter" de la entrada binaria 4 esté activado.</p>
+<p><strong>Observando los valores de los puntos en modo maestro</strong></p>
+<p>Hasta aquí hemos aprendido a modificar los valores de los puntos en modo remoto, sin embargo, es más común usar CommSet como un simulador de maestra, por tanto necesitamos ver los valores de los puntos de una manera amigable sin tener que interpretar los mensajes.</p>
+<p>Deje la ventana de configuración abierta y cierre todas las demás ventanas.</p>
+<p>Bajo el icono Modo maestro DNP 3.0 ya hay una UTR con identificador Disp0. De la misma manera en que se hizo en modo remoto, es posible agregar, configurar y borrar dispositivos en el modo maestro.</p>
+<p>Haga clic derecho sobre el icono Disp0 en modo maestra y seleccione la opción <strong>Mostrar puntos</strong>. CommSet presentará la ventana de entradas binarias.</p>
+<p>Ahora haga clic derecho sobre el icono MyUTR en modo remota y seleccione también la opción <strong>Mostrar puntos</strong>. Commset abrirá otra ventana de entradas binarias.</p>
+<p>No se confunda con estas ventanas, cada una pertenece a una UTR diferente. Cambie los valores de los puntos de la UTR llamada MyUTR haciendo doble clic sobre sus íconos.</p>
+<p>Abra la ventana de comandos haciendo doble clic sobre el icono <strong>Modo maestro DNP 3.0</strong>, seleccione el segundo mensaje y presione el botón <strong>Enviar</strong>.</p>
+<p>Si observa la ventana de entradas binarias de la UTR llamada Disp0, notará que los valores de los puntos se actualizaron.</p>
+<p>Cada vez que CommSet recibe una respuesta a un comando, busca por el dispositivo configurado con la dirección de la respuesta. Si encuentra el dispositivo, entonces actualiza los valores de los puntos de acuerdo con el contenido de la respuesta.</p>
+<p><strong>Observando los históricos de mensajes de otras capas</strong></p>
+<p>CommSet mantiene un histórico de mensajes para cada una de las capas del protocolo. Para desplegar el histórico solamente es necesario hacer doble clic sobre el icono <strong>Histórico</strong> <img height="16" alt="" src="log.gif" width="16" border="0" />&nbsp;correspondiente en la ventana de configuración.</p>
+<p>Hemos estado trabajando con el histórico de la capa de aplicación. Ahora trabajemos un momento con el histórico de la capa de enlace.</p>
+<p>Haga doble clic sobre el icono <strong>Histórico</strong> <img height="16" alt="" src="log.gif" width="16" border="0" />&nbsp;que aparece bajo la rama <strong>DNP 3.0 Enlace <img height="16" alt="" src="protocol.gif" width="16" border="0" /></strong>.</p>
+<p>Marque ahora la opción <strong>Detalles</strong> de lado derecho de la ventana y seleccione uno de los mensajes.</p>
+<p>CommSet desplegará una ventana como la siguiente:</p><p align="center"><img height="496" alt="" src="LinkLogDetail.png" width="653" border="0" /></p>
+<p>La ventana de detalles muestra ahora la información sobre el mensaje seleccionado.</p>
+<p><strong>Conclusión</strong></p>
+<p>En este guía rápida usted ha aprendido a usar algunas de las funciones básicas de CommSet. Esperamos que con ello se haya dado cuenta de la funcionalidad del programa y de su facilidad de uso. Lo invitamos a que continúe explorando CommSet por su cuenta.</p>
+<p><strong>Desinstalando CommSet</strong></p>
+<p>Para desinstalar CommSet vaya a <strong>Inicio-Configuración-Panel de Control</strong>, seleccione la opción <strong>Agregar/Quitar Programas</strong>, busque CommSet en la lista de programas, seleccione <strong>Modificar/Remover</strong> y presione el botón <strong>Si</strong>.<strong>&nbsp;</strong></p>
+
+<!-- Start of StatCounter Code -->
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var sc_project=306503; 
+var sc_partition=1; 
+//]]>
+</script>
+
+<script language="javascript" src="http://www.statcounter.com/counter/counter.js" type="text/javascript">
+</script><noscript><a href="http://www.statcounter.com" target="_blank"><img alt="hit counter" src="http://c2.statcounter.com/counter.php?sc_project=306503&amp;java=0" border="0" /></a> </noscript>
+<!-- End of StatCounter Code -->
+	
+		
+		<p><em></em></p>
+		
+	</div>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-163328-1";
+urchinTracker();
+</script>
+
+</body>
+</html>
+
+   

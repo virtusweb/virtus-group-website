@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="Fog Creek CityDesk 2.0.25" />
+<meta name="citydesk" content="8616157C/75" />
+<title>Virtus Group - Historia xHosp</title>
+	<link rel="stylesheet" type="text/css" href="../Virtus/StyleSheets/basic.css" title="default" media="screen" />
+</head>
+<body id="citydesk-template">
+
+<div id="container">
+
+	<h2><a href="../index.html"><img alt="" src="../Virtus/Images/virtus-group.gif" border="0" /></a></h2>
+		<div id="menu">
+<ul class="level1">
+<li><a href="../index.html">Virtus Group</a></li>
+<li><a href="../rail/index.html">Virtus Rail</a>
+<ul class="level2">
+<li><a href="../hojadetrenes/index.html">Hoja de Trenes</a></li>
+<li><a href="../cct/index.html">CCT</a></li>
+<li><a href="../interaction/index.html">Interaction</a></li>
+</ul>
+</li>
+<li><a href="../medical/index.html">Virtus Medical</a>
+<ul class="level2">
+<li><a href="index.html">xHosp</a></li>
+<li><a href="../xlab/index.html">xLab</a></li>
+<li><a href="../xblood/index.html">xBlood</a></li>
+<li><a href="../xray/index.html">xRay</a></li>
+</ul>
+</li>
+<li><a href="../consulting/index.html">Virtus Consulting</a>
+<ul class="level2">
+<li><a href="../commset/index.html">CommSet</a></li>
+</ul>
+</li>
+<li><a href="../Virtus/Contacto.html">Contacto</a>
+</li>
+</ul>
+</div>
+
+	<div id="articleBody">
+
+		
+		<h3>Historia xHosp</h3>
+		
+	
+		
+	
+		
+
+<h3 class="version">xLab: 1.4.25 - 2005/11/11</h3>
+
+<h4 class="changeTitle">874: Agregar funcionalidad de guardar y recuperar un archivo RTF al xLab (similar al xRay)</h4>
+<p class="changeDesc">En la pantalla de captura de resultados por paciente se agregaron las funciones tanto de poder almacenar en disco un resultado tipo texto como archivo RTF para usarlo posteriormente como machote así como poder recuperar un archivo RTF para utilizarlo dentro de un resultado por medio de los botones de "guardar en disco" y "recuperar en disco".</p>
+
+<h4 class="changeTitle">835: Cuando se asigna un beneficio al paciente debería actualizar el status de patientpayment para liberar sus estudios en Internet</h4>
+<p class="changeDesc">Cuando le den un beneficio especial al paciente como una cortesia un descuento, etc. el sistema ya actualiza el status de "cuenta pagada" para liberar los resultados por internet.</p> 
+
+<h3 class="version">Farmacia: 1.3.39 -2005/06/24</h3>
+
+<h4 class="changeTitle">453: Al capturar el inventario fisico solo te esta desplegando los primeros 100 articulos</h4>
+<p class="changeDesc">Se agrego funcionalidad para que en la pantalla de captura del inventario físico, al consultar los articulos, el sistema te despliegue el último registro (de los 100) en los criterios de consulta para que el usuario pueda ir automáticamente de 100 en 100.</p>
+
+<h3 class="version">Farmacia: 1.4.0 -2005/07/10</h3>
+<h4 class="changeTitle">489: Candado para ajustes procesados durante un periodo en Reporte valuado de ajustes al inventario</h4>
+<p class="changeDesc">En el reporte valuado de ajustes al inventario si aun no se ha procesado el ajuste al inventario y marco la opcion ajustes procesados durante el periodo me  marca el siguiente error: Error 13 Type Mismatch</p>  
+
+<h4 class="changeTitle">533: Al atender una requisición de piso en la farmacia se cerró el sistema sin marcar la orden como atendida</h4>
+<p class="changeDesc">Se arregló el siguiente bug:
+</p>
+<p class="changeDesc">Al atender una requisición de piso en la farmacia se cerró el sistema sin marcar la orden como atendida. El usuario volvió a entrar al sistema y la volvió a atender, por lo cual se generaron dos salidas y obviamente se le duplicaron las existencias al subalmacen.</p>  
+
+<h3 class="version">Farmacia: 1.4.1 -2005/07/22</h3>
+<h4 class="changeTitle">547: Checar que todas las devoluciones estén afectando el estado de cuenta</h4>
+<p class="changeDesc">Se hicieron pruebas y se comprobó que este bug no esta ocurriendo.</p> 
+
+<p class="changeDesc">Checar con el usuario por que pueden tratarse de salidas no confirmadas.</p> 
+
+<h4 class="changeTitle">583: No permite guardar cuando se atiende una requisición de piso y se marcan todos los articulos</h4>
+<p class="changeDesc">Se resolvió el siguiente bug: No permite guardar cuando se atiende una requisición de piso y se marcan todos los articulos.</p> 
+
+<h4 class="changeTitle">565: Poner un candado para no permitir hacer devoluciones hasta que una solicitud de articulos se encuentre confirmada</h4>
+<p class="changeDesc">Se puso un candado en la función de devolución de artículos para no poder hacer una devolución si la salida esta pendiente de confirmar.</p>
+<p class="changeDesc">El sistema deshabilita el botón de guardar y manda un mensaje informando que la devolución no procede por que la salida esta pendiente de confirmar.</p>
+
+
+<h4 class="changeTitle">573: Factura duplicada en entradas de almacén</h4>
+<p class="changeDesc">Se corrigió en el sistema validando que no puedan meter un mismo pedido o una misma factura dos veces.</p>
+
+<h4 class="changeTitle">574: Diferencias en la relación de salidas y el reporte de margen de utilidad</h4> 
+<p class="changeDesc">Se resolvió el siguiente bug: en el reporte de salidas y el reporte de margén de utilidad existían diferencias. Se debía a que el reporte de salidas solamente estaba tomando en cuenta salidas confirmadas en vez de tomar en cuenta todas las salidas.</p>
+
+<h4 class="changeTitle">575: Diferencias en la relación de salidas y el resumen de consumo por centro de costo</h4> 
+<p class="changeDesc">Se resolvió este bug: Diferencias en la relación de salidas y el resumen de consumo por centro de costos.</p>
+
+<h3 class="version">Farmacia: 1.4.2 -2005/08/05</h3>
+<h4 class="changeTitle">576: Asignar el almacén a una máquina en vez de al usuario</h4>
+<p class="changeDesc">Se cambio la asignación de almacenes para que en vez de asignarse el almacén al usuario ahora el sistema permite asignar varios almacenes a una máquina (PC).</p>
+<p class="changeDesc">En el catálogo de almacenes (Warehouse), es necesario marcar los almacenes como "NORMAL" o como "CARRO_ROJO" por medio del campo warehouseType.</p>
+<p class="changeDesc">Por medio de la tabla MachineWarehouse se asignan los almacenes de cada maquina. Adicionalmente, para el caso de almacenes normales se requiere además marcar uno como el almacen principal por medio del campo main="S". Tambien permite asignar almacenes tipo Carro rojo.</p>
+<p class="changeDesc">Por medio de los privilegios de usuarios se puede asignar la función de salidas de carro rojo a los usuarios que deberán tener acceso a esta función.</p>
+
+<h4 class="changeTitle">602: Agregar funcionalidad de almacenes por maquina para requisiciones y devoluciones de pacientes</h4>
+<p class="changeDesc">Se modificó la pantalla de requisiciones a la farmacia (reordenes) para permitir seleccionar entre todos los almacenes asignados a la maquina.</p>
+
+<p class="changeDesc">Se agregó una pantalla de devoluciones de artículos al carro rojo.</p>
+
+<h4 class="changeTitle">610: En el menú de generación de requisiciones agregar la función de requisiciones de carro rojo</h4>
+<p class="changeDesc">Se agregó la función y pantalla de generación de requisiciones del carro rojo con su respectivo item en la tabla de privilegios de acceso.</p>
+
+<h4 class="changeTitle">612: Agregar funcionalidad de almacenes por maquina para consulta de requisiciones</h4> 
+<p class="changeDesc">Se agregó la misma funcionalidad de almacen y carro rojo para la consulta de requisiciones y se modificaron los menus del Submenu Movimientos del módulo de farmacia para reflejar estos cambios.</p>
+
+<h3 class="version">Farmacia: 1.4.3 -2005/08/10</h3>
+
+<h4 class="changeTitle">428: Cuando egresa una paciente que no permita dar cargos de farmacia como interno</h4>
+<p class="changeDesc">Al presionar el botón de guardar en la pantalla de salida a pacientes internos, el sistema verifica que el paciente aún no haya sido egresado. Si el paciente fue egresado no permite realizar la salida de artículos.</p>
+
+<p class="changeDesc">Si aún existen artículos pendientes de despachar para ese paciente, deberá existir un procedimiento administrativo que permita al usuario hacer la salida de los artículos como paciente externo y posteriormente consolidar ambas cuentas.</p>
+
+<h4 class="changeTitle">614: Al hacer pedidos de artículos que permita cambiar el almacén que lo esta solicitando</h4>
+<p class="changeDesc">Al hacer pedidos de artículos ya te permite cambiar el almacén que lo esta solicitando por medio del botón de "cambio de almacén" que aparece junto al campo de almacén tanto en la pantalla de pedidos como en las pantallas de consulta de pedidos y consulta de entradas.</p>
+
+<p class="changeDesc">El botón de "cambio de almacén" se habilita por medio de la opción de "Cambiar almacén" dentro de los privilegios de acceso por usuario del módulo de administración.</p>
+
+<p class="changeDesc">El sistema únicamente permite el cambio entre los almacenes que se encuentren asignados a la estación de trabajo.</p> 
+
+<h4 class="changeTitle">570: Las solicitudes de medicamentos a pacientes y las requisiciones pueden atenderse dos veces</h4>
+<p class="changeDesc">Se puso un candado para que antes de guardar la salida a paciente, el traspaso entre almacenes o el pedido el sistema verifique si la orden o requisición no fue atendida o cancelada. Con esto se soluciona el problema de que hayan atendido la solicitud o requisición en otra estación de trabajo al mismo tiempo</p>
+
+<h3 class="version">Farmacia: 1.4.5 -2005/11/17</h3>
+<h4 class="changeTitle">532: Cuando se asignan datos a un subalmacen no respeta los cambios en punto de reorden, min, max</h4>
+<p class="changeDesc">Se hizo la prueba en la pantalla de artículos por almacen y el sistema modifica bien los puntos de reorden, cantidad de reorden min y max. para uno o varios artículos al mismo tiempo</p>
+
+<h4 class="changeTitle">684: Revisar los privilegios de la pantalla de actualización de articulos por almacén</h4>
+<p class="changeDesc">Se corrigió el siguiente error:</p>
+<p class="changeDesc">Aunque el usuario solo tenga los privilegios de ver e imprimir, le esta permitiendo modificar los parámetros de punto de reorden o min, max. y le permite guardar dichos cambios.</p>
+
+<h3 class="version">Admision: 1.4.23 -2005/07/10</h3>
+<h4 class="changeTitle">506: Cuando cargue automáticamente cuartos en el ingreso y egreso de pacientes les asigne el usuario SYS</h4>
+<p class="changeDesc">Cuando se cargue automáticamente cuartos le debe asignar el usuario SYS para indicar que el cargo fue automático.</p>
+
+<h4 class="changeTitle">509: Al cambiar a un paciente de convenio a particular o viceversa le agrega medio día de cuarto</h4>
+<p class="changeDesc">Se resolvió el siguiente bug:</p>
+<p class="changeDesc">Cuando se ingresa un paciente de urgencias, posteriormente se hace la transferencia de urgencias a cuarto. Se modifica  el tipo o motivo de ingreso, el médico o algún dato del paciente y se vuelve a ingresar para reimprimir el comprobante de ingreso, el sistema le hace un cargo de medio de cuarto (dependiendo de la hora de ingreso).</p>
+
+<h3 class="version">Admision: 1.4.24 -2005/09/21</h3>
+<h4 class="changeTitle">776: Al ingresar un paciente y hacer un cargo automatico de cuartos poner las iniciales SYS</h4>
+<p class="changeDesc">Se modifico el sistema para asignar como usuario las siglas SYS cuando se carga automaticamente cuartos al ingresar el paciente (medio dia) para indicar que fue un cargo automático.</p>
+
+<h4 class="changeTitle">563: Cuando el paciente ingresa y egresa el mismo día de todos modos le carga un cuarto</h4>
+<p class="changeDesc">El procedimiento por escrito autorizado por el HUPAEP, define que se le cobra medio día de cuarto si el paciente egresa despues de la 1:30 y un dia de cuarto si egresa despues de las 6 pm (4 1/2 horas despues de la 1:30).</p>
+
+<p class="changeDesc">Este procedimiento no especifica que hacer en el caso de que el ingreso sea el mismo día del egreso. Por lo tanto por lo pronto se dejo como estaba hasta recibir por escrito dicho cambio.</p>
+
+
+<h3 class="version">Caja: 1.4.40 -2005/09/21</h3>
+<h4 class="changeTitle">775: Poner las siglas SYS cuando se carga automaticamente cuartos al egresar el paciente</h4>
+<p class="changeDesc">Se modifico el sistema para asignar como usuario las siglas SYS cuando se carga automaticamente cuartos al egresar el paciente (medio dia o un dia) para indicar que fue un cargo automático.</p>
+
+<h3 class="version">Caja: 1.4.41 -2005/11/17</h3>
+<h4 class="changeTitle">885: En el reporte de prestaciones no facturadas filtrar las de saldo cero</h4>
+<p class="changeDesc">Se modificó el siguiente reporte:</p>
+<p class="changeDesc">En el reporte de prestaciones no facturadas filtrar las de saldo cero.</p>
+
+<h3 class="version">Cargo automatico de cuartos: 1.4.9 -2005/09/21</h3>
+<h4 class="changeTitle">433: Cambiar la fecha del cargo del cuarto por la fecha actual no la del día anterior</h4>
+<p class="changeDesc">Se modificó el cargo automático de cuartos para asignar la fecha del día en que se ejecuta el cargo en vez de la fecha del día anterior.</p>
+
+<h3 class="version">Central de enfermeras: 1.1.3 -2005/07/29</h3>
+<h4 class="changeTitle">571: En la solicitud de medicamentos desde centrales de enfermeras extender a 35 los renglones</h4>
+<p class="changeDesc">Se agregaron a 50 el máximo de renglones en donde se pueden capturar artículos.</p> 
+<p class="changeDesc">También se hizo un poco más grande la pantalla para poder ver 20 renglones a la vez.</p>
+
+<h3 class="version">Central de enfermeras: 1.1.4 -2005/05/08</h3>
+<h4 class="changeTitle">601: Agregar funcionalidad de asignación de almacenes por maquina al módulo de central de enfermería</h4>
+<p class="changeDesc">Se agregó la función de asignación de almacenes por máquina en vez de por usuario.
+
+</p>
+<h4 class="changeTitle">603: Agregar funcionalidad de almacenes por maquina para requisiciones y devoluciones de pacientes</h4>
+<p class="changeDesc">Se modificó la pantalla de requisiciones a la farmacia (reordenes) para permitir seleccionar entre todos los almacenes asignados a la maquina.</p>
+
+<p class="changeDesc">Se agregó una pantalla de devoluciones de artículos al carro rojo.</p>
+
+<h4 class="changeTitle">609: En el menú de generación de requisiciones agregar la función de requisiciones de carro rojo</h4>
+<p class="changeDesc">Se agregó la función y pantalla de generación de requisiciones del carro rojo con su respectivo item en la tabla de privilegios de acceso.</p>
+
+<h4 class="changeTitle">611: Agregar funcionalidad de almacenes por maquina para consulta de requisiciones</h4>
+<p class="changeDesc">Se agregó la misma funcionalidad de almacen y carro rojo para la consulta de requisiciones y se modificaron los menus del Submenu Farmacia de la central de enfermeras para reflejar estos cambios.</p>
+
+<h3 class="version">Central de enfermeras: 1.1.5 -2005/08/16</h3>
+<h4 class="changeTitle">636: Agregar funcionalidad de salidas de carro rojo hacia servicios</h4>
+<p class="changeDesc">Se agregó la pantalla de salidas de carro rojo hacia servicios y se modificó el menú para agregar esta opción.</p>
+
+<h3 class="version">Central de enfermeras: 1.1.6 -2005/10/14</h3>
+<h4 class="changeTitle">802: Ordenar la Consulta de Ordenes de piso de Laboratorio y Rayos X por fecha descendente</h4>
+<p class="changeDesc">La consulta de ordenes de piso muestra las órdenes por fecha descendente y filtra las 500 órdenes más recientes.</p>
+
+<h3 class="version">Cobranzas: 1.4.11 -2005/06/24</h3>
+<h4 class="changeTitle">440: Pronóstico de cobranzas por usuario</h4>
+<p class="changeDesc">En el pronóstico de cobranzas, se estaban incluyendo facturas que ya habian sido pagadas. (No estaba tomando en cuenta la serie).</p>
+
+<h3 class="version">Cobranzas: 1.4.12 -2005/10/17</h3>
+<h4 class="changeTitle">534: Al ingresar una ficha de depósito posicionar el cursor en el campo de importe para poder realizar otra</h4>
+<p class="changeDesc">Al guardar una ficha de depósito se posiciona el cursor en el campo de importe para poder realizar otra ficha y que no tengan que estar con el mouse dandole click en varios campos.</p>
+
+
+<h3 class="version">Cobranzas: 1.4.13 -2005/10/31</h3>
+<h4 class="changeTitle">852: Errores en el reporte de saldo/s detallados de empresas</h4>
+<p class="changeDesc">Se corrigió el error del reporte de saldos detallados: El campo de nombre de paciente dentro del reporte se agrando de 50 a 100 caracteres.</p>
+
+<h4 class="changeTitle">853: Manda un error al mandar un reporte completo de facturas pendientes de relacionar para todas las compañías</h4>
+<p class="changeDesc">Se corrigió el error que mandaba el reporte de facturas pendientes de relacionar: Arry is fixed or temporarily locked.</p>
+
+<h3 class="version">Interfaz contable: 1.4.13 -2005/07/27</h3>
+<h4 class="changeTitle">572: Ponerle X en el tipo de póliza a las pólizas de entradas y salidas</h4> 
+<p class="changeDesc">Para las pólizas de entradas y salidas les pone una X para indicar el tipo de póliza</p>
+
+<h3 class="version">Interfaz contable: 1.4.14 -2005/08/12</h3>
+<h4 class="changeTitle">626: Cuando la interfaz de salidas de almacén no tiene movimientos manda el error 91</h4>  
+<p class="changeDesc">Cuando no tiene movimientos el sistema generará un póliza indicando por medio de un mensaje: "SIN MOVIMIENTOS EN EL DIA: DD/MM/YYYY"</p>
+
+<h3 class="version">Interfaz contable: 1.4.15 -2005/08/25</h3>
+<h4 class="changeTitle">212: Modificar interfaz de salidas para manejo de salidas con confirmación</h4> 
+<p class="changeDesc">En la póliza de salidas se detallan las salidas pendientes de confirmación y también las salidas de otros días que fueron confirmadas en la fecha del reporte.</p>
+
+<h4 class="changeTitle">507: Póliza de Ingresos de caja del día 3/Marzo/2005 manda Error 10 "Array is fixed..."</h4>
+<p class="changeDesc">Se corrigió el siguiente error: Póliza de Ingresos de caja del día 3/Marzo/2005 manda Error 10 "Array is fixed..."</p>
+<h4 class="changeTitle">647: La interfaz de salidas marca que la cuenta no esta configurada para el subalmacen 3 piso</h4>
+<p class="changeDesc">Se corrigió el problema para no tener que configurar por cada almacén las cuentas de cargo para las salidas a pacientes internos, externos o devoluciones de artículos de pacientes.</p>
+
+<h3 class="version">Release Notes - xRay: 1.1.6 -2005/06/17</h3>
+<h4 class="changeTitle">478: No se actualizan  los datos de facturacion</h4>
+<p class="changeDesc">Se corrigió el bug de que no se actualizaban los datos de facturación cuando la empresa estaba configurada para permitir facturar con los datos del paciente aunque tuviera crédito. Ahora ya lo permite.</p>
+
+<h3 class="version">xRay: 1.1.7 -2005/07/15</h3>
+<h4 class="changeTitle">550: Agregar reporte de ventas por grupo de XRayComplete al xRay</h4>
+<p class="changeDesc">Se incluyeron los siguientes reportes estadísticos:</p>
+<p class="changeDesc">Ventas por compañía de convenio: RepSalesByCompany</p>
+<p class="changeDesc">Ventas por producto: RepSalesByProduct</p>
+<p class="changeDesc">Ventas por especialidad del médico: RepSalesBySpeciality</p>
+<p class="changeDesc">Ventas por los clientes princiales: RepSalesMainClients</p>
+<p class="changeDesc">Ingresos semanales por grupo: RepInvGroupXRay </p>
+
+<h4 class="changeTitle">555: Imprime el folio repetido de una orden despues de atender una solicitud de estudios de rayos X</h4>
+<p class="changeDesc">Se resolvió el siguiente bug:</p>
+<p class="changeDesc">Cuando atienden una solicitud de orden de rayos X para un paciente de Urgencias y posteriormente generan una orden de rayos X para un paciente externo, el sistema les imprime el mismo folio de la orden anterior.</p> 
+
+<h3 class="version">xRay: 1.1.8 -2005/11/17</h3>
+<h4 class="changeTitle">632: Ampliar la Pantalla de "Captura de Resultados" en xRay</h4>
+<p class="changeDesc">Se amplió la Pantalla: "Captura de Resultados". Se trató de sincronizar hasta donde fue posible para que se observe en dicha pantalla , en forma completa, como se observa la de "Vista Previa de Resultados"</p>
+
+<h4 class="changeTitle">633: Incluir la función de TAB y de Justificar todo lo escrito en la captura de resultados</h4>
+<p class="changeDesc">Se incluyeron la función de tab y la de justificación de párrafos.
+</p>
+<p class="changeDesc">Para poder cambiar de versión se requiere reinstalar el módulo por que instala un nuevo control (ActiveX).</p>
+
+<h4 class="changeTitle">634: La impresión del documento se realiza en forma desordenada</h4>
+<p class="changeDesc">No se puede realizar los cambios en la vista previa por motivos de seguridad ya que podrían cambiarse tambien los datos el paciente, de la orden y del estudio que se está reportando. Sin embargo se modificó el la pantalla de captura de resultados para permitir justificación de párrafos, uso de la tecla de tabulación y ajustarse lo más posible a la vista previa.</p>
+
+
+
+
+	
+		
+		<p><em></em></p>
+		
+	</div>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-163328-1";
+urchinTracker();
+</script>
+
+</body>
+</html>
+
+   

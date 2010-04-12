@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="Fog Creek CityDesk 2.0.25" />
+<meta name="citydesk" content="8616157C/87" />
+<title>Virtus Group - Solicitud de información general</title>
+	<link rel="stylesheet" type="text/css" href="StyleSheets/basic.css" title="default" media="screen" />
+</head>
+<body id="citydesk-template">
+
+<div id="container">
+
+	<h2><a href="../index.html"><img alt="" src="Images/virtus-group.gif" border="0" /></a></h2>
+		<div id="menu">
+<ul class="level1">
+<li><a href="../index.html">Virtus Group</a></li>
+<li><a href="../rail/index.html">Virtus Rail</a>
+<ul class="level2">
+<li><a href="../hojadetrenes/index.html">Hoja de Trenes</a></li>
+<li><a href="../cct/index.html">CCT</a></li>
+<li><a href="../interaction/index.html">Interaction</a></li>
+</ul>
+</li>
+<li><a href="../medical/index.html">Virtus Medical</a>
+<ul class="level2">
+<li><a href="../xhosp/index.html">xHosp</a></li>
+<li><a href="../xlab/index.html">xLab</a></li>
+<li><a href="../xblood/index.html">xBlood</a></li>
+<li><a href="../xray/index.html">xRay</a></li>
+</ul>
+</li>
+<li><a href="../consulting/index.html">Virtus Consulting</a>
+<ul class="level2">
+<li><a href="../commset/index.html">CommSet</a></li>
+</ul>
+</li>
+<li><a href="Contacto.html">Contacto</a>
+</li>
+</ul>
+</div>
+
+	<div id="articleBody">
+
+		
+		<h3>Solicitud de información general</h3>
+		
+	
+		
+	
+		<p>Para poder atender su solicitud de información en el menor tiempo posible es necesario que llene la siguiente forma.</p>
+<p>Los campos marcados con <font color="#FF0000">*</font> son obligatorios.</p>
+
+	<form class="hector" id="contact" method="post" action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" onsubmit="return checkform(this);">
+		<input type="hidden" name="recipient" value="info@virtus.com.mx">
+		<input type="hidden" name="subject" value="Solicitud de información">
+		<input type="hidden" name="redirect" value="http://www.virtus.com.mx/Virtus/confirm.html">
+    <input type="hidden" name="date_offset" value="-5" />
+		<fieldset name="client">
+			<legend>Datos del cliente</legend>
+			<label for="name">Nombre <em>*</em></label>
+			<input id="name" name="realname" type="text" />
+			<br />
+			<label for="phone">Teléfono <em>*</em></label>
+			<input id="phone" name="phone" type="text" />
+			<br />
+			<label for="email">e-mail <em>*</em></label>
+			<input id="email" name="email" type="text" />
+			<br />
+			<label for="comments">Comentarios <em>*</em></label>
+			<textarea id="comments" name="comments" cols="20" rows="5"></textarea>
+			<br />
+		</fieldset>
+		<label for="send"></label>
+		<input id="send" name="send" type="submit" value="Enviar" />
+		<br />
+		<br />
+	</form>
+
+<p></p>
+<p></p>
+<p><font size="2">Nuestra política de privacidad es muy simple:</font></p>
+<ul>
+<li><font size="2">No compartiremos su dirección de correo electrónico con nadie.
+</font>
+</li>
+<li><font size="2">Solo recibirá ocasionalmente mensajes de correo electrónico relacionados con xLab.</font>
+</li>
+</ul>
+<p>
+</p>
+
+<script language= "javascript" type="text/javascript">
+
+function checkform ( form )
+{
+
+  if (form.name.value == "") {
+    alert( "Por favor escriba su nombre completo" );
+    form.name.focus();
+    return false ;
+  }
+
+  if (form.phone.value == "") {
+    alert( "Por favor escriba su teléfono" );
+    form.phone.focus();
+    return false ;
+  }
+
+  if (form.email.value == "") {
+    alert( "Por favor escriba su dirección de correo electrónico" );
+    form.email.focus();
+    return false ;
+  }
+  
+  if (validate("contact", "email") == false) {
+    alert('La dirección de e-mail no es válida');
+    form.email.focus();
+    return false ;
+  }
+
+  if (form.comments.value == "") {
+    alert( "Por favor escriba sus comentarios" );
+    form.comments.focus();
+    return false ;
+  }
+
+  return true ;
+  
+}
+
+function validate(form_id,email) {
+   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+   var address = document.forms[form_id].elements[email].value;
+   if(reg.test(address) == false) {
+      return false;
+   }
+   return true;
+}
+</script>
+
+	
+		
+		<p><em></em></p>
+		
+	</div>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-163328-1";
+urchinTracker();
+</script>
+
+</body>
+</html>
+
+   

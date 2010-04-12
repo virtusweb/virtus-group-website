@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="Fog Creek CityDesk 2.0.25" />
+<meta name="citydesk" content="8616157C/64" />
+<title>Virtus Group - Historia de los cambios a Commset</title>
+	<link rel="stylesheet" type="text/css" href="../Virtus/StyleSheets/basic.css" title="default" media="screen" />
+</head>
+<body id="citydesk-template">
+
+<div id="container">
+
+	<h2><a href="../index.html"><img alt="" src="../Virtus/Images/virtus-group.gif" border="0" /></a></h2>
+		<div id="menu">
+<ul class="level1">
+<li><a href="../index.html">Virtus Group</a></li>
+<li><a href="../rail/index.html">Virtus Rail</a>
+<ul class="level2">
+<li><a href="../hojadetrenes/index.html">Hoja de Trenes</a></li>
+<li><a href="../cct/index.html">CCT</a></li>
+<li><a href="../interaction/index.html">Interaction</a></li>
+</ul>
+</li>
+<li><a href="../medical/index.html">Virtus Medical</a>
+<ul class="level2">
+<li><a href="../xhosp/index.html">xHosp</a></li>
+<li><a href="../xlab/index.html">xLab</a></li>
+<li><a href="../xblood/index.html">xBlood</a></li>
+<li><a href="../xray/index.html">xRay</a></li>
+</ul>
+</li>
+<li><a href="../consulting/index.html">Virtus Consulting</a>
+<ul class="level2">
+<li><a href="index.html">CommSet</a></li>
+</ul>
+</li>
+<li><a href="../Virtus/Contacto.html">Contacto</a>
+</li>
+</ul>
+</div>
+
+	<div id="articleBody">
+
+		
+		<h3>Historia de los cambios a Commset</h3>
+		
+	
+		
+	
+		<h3 class="version">CommSet: 2.2.8 - 2005/08/10</h3>
+					
+<h4 class="changeTitle">235: Indicación de clase con mensaje no solicitado</h4>
+<p class="changeDesc">DNP 3.0. Se maneja correctamente la indicación interna para las clases cuando se genera un mensaje espontáneo. Al enviarse el mensaje la indicación está encendida y se apaga hasta que se recibe la confirmación de la maestra si ya no hay eventos a reportar.</p>
+					
+<h4 class="changeTitle">268: Manejo independiente de eventos</h4>
+<p class="changeDesc">DNP 3.0. Anteriormente se enviaba un mensaje espontáneo cuando la suma de los eventos de cualquier clase era igual al número de eventos configurado. Ahora se maneja de forma independiente para cada clase.</p>
+
+<h4 class="changeTitle">107: Asignación de eventos a clases</h4>
+<p class="changeDesc">DNP 3.0. Ya se pueden asignar eventos a clases en modo remoto, tanto por comandos recibidos de la maestra como por la interfaz de usuario.</p>
+						
+<h4 class="changeTitle">109: Configuración de tipos de evento a reportar</h4>
+<p class="changeDesc">DNP 3.0. Ya envía el el objeto y variación configurados por el usuario para los eventos en los mensajes espontáneos.</p>
+						
+<h4 class="changeTitle">110: Configuración de número de cambios a reportar</h4>
+<p class="changeDesc">DNP 3.0. Cuando el número de eventos en la lista llega al valor configurado, se genera automáticamente un mensaje no solicitado.</p>
+						
+<h4 class="changeTitle">111: Configuración de tiempo de reporte de no solicitados</h4>
+<p class="changeDesc">DNP 3.0. Si hay eventos en la lista durante un tiempo mayor al configurado se genera automáticamente un mensaje no solicitado.</p>
+						
+<h4 class="changeTitle">118: Configuración de objetos por default por remota</h4>
+<p class="changeDesc">DNP 3.0. Se agregó la funcionalidad para configurar el grupo y variación con que contesta la remota cuando la maestra pregunta con variación 0.</p>
+						
+<h4 class="changeTitle">120: Manejo de Indicación Restart</h4>
+<p class="changeDesc">DNP 3.0. Los dispositivos en modo remoto tienen inicialmente encendidas las banderas de Restart y Synch Req</p>
+						
+<h4 class="changeTitle">122: Manejo de indicaciones ClassX</h4>
+<p class="changeDesc">DNP 3.0. Ya se manejan las indicaciones internas de clase. Se encienden cuando hay eventos sin reportar de la&nbsp; clase y se apagan cuando se vacían las colas de eventos.</p>
+						
+<h4 class="changeTitle">136: Respuesta a controles con error de formato</h4>
+<p class="changeDesc">DNP 3.0. Si se intenta operar un punto de control con un código diferente al configurado indica error en formato.</p>
+						
+<h4 class="changeTitle">137: Códigos de respuesta en controles</h4>
+<p class="changeDesc">DNP 3.0. Se implementó el manejo de los diferentes códigos de respuesta para los comandos de manejo de controles.</p>
+						
+<h4 class="changeTitle">254: Responder a Objeto 1, Variacion 2, Calificador 6</h4>
+<p class="changeDesc">DNP 3.0. Ya responde el modo remota correctamente a la lectura del objeto 1, variación 2, calificador 6.</p>
+						
+<h4 class="changeTitle">627: Error inesperado al editar un dispositivo con un archivo ya creado.</h4>
+<p class="changeDesc">Se corrigió el error que no permitía modificar un punto.<br />
+Si el último punto de un dispositivo era una salida binaria con retroalimentación, CommSet fallaba al editar la primera entrada binaria del siguiente dispositivo.<br />
+</p>
+						
+<h4 class="changeTitle">473: Truena cuando se hace un control que genera eventos</h4>
+<p class="changeDesc">Ya no falla cuando se opera una salida binaria que tiene una retroalimentación configurada para generar eventos.</p>
+						
+<h4 class="changeTitle">560: No escucha un canal en modo monitor</h4>
+<p class="changeDesc">Ya funciona bien el modo monitor.</p>
+						
+<h4 class="changeTitle">142: Manejo de líneas de control</h4>
+<p class="changeDesc">Se corrigió el manejo de las línea RTS para que envuelva completamente a los datos transmitidos. Antes se estaba bajando la línea RTS antes de tiempo.</p>
+	
+<h4 class="changeTitle">147: Confirmación de mensajes no solicitados</h4>
+<p class="changeDesc">DNP 3.0. En modo maestro solamente confirma los mensajes no solicitados que vayan diriigidos a la dirección de la maestra. Anteriormente confrmaba cualquier mensaje no solicitado.</p>
+						
+<h4 class="changeTitle">154: Escritura de objeto 50,1</h4>
+<p class="changeDesc">DNP 3.0. Se implementó la escritura del objeto 50, variación 1 (Time and date)</p>
+						
+<h4 class="changeTitle">113: Responder a hab/deshab de no solicitados</h4>
+<p class="changeDesc">DNP 3.0. Se implementó el manejo de los mensajes de habilitación y deshabilitación de mensajes no solicitados.</p>
+						
+<h4 class="changeTitle">114: Responder a asignación de clases</h4>
+<p class="changeDesc">DNP 3.0. Se implementó el mensaje de asignación de clases.</p>
+						
+<h4 class="changeTitle">3: No funciona escritura de indicaciones internas</h4>
+<p class="changeDesc">DNP 3.0. En modo maestra se implementó la creación del comando de escritura de indicaciones internas. En modo remota se implementó el manejo de este comando.</p>
+						
+<h4 class="changeTitle">5: Hora de eventos incorrecta</h4>
+<p class="changeDesc">Se corrigió el manejo de la hora para los eventos ya que estaba afectada incorrectamente por la zona horaria configurada en la computadora.</p>
+						
+<h4 class="changeTitle">6: Mensaje no solicitado manual no contiene eventos</h4>
+<p class="changeDesc">DNP 3.0. El mensaje no solicitado manual antes enviaba los objetos de la clase 0, ahora envía los objetos de las clases 1, 2 y 3 (eventos) de acuerdo con la configuración del dispositivo y el contenido de las colas de eventos.</p>
+
+<h4 class="changeTitle">8: No se guarda la descripción de los puntos</h4>
+<p class="changeDesc">Ya no se pierde la descripción de los puntos al salir y volver a entar a Commset.</p>
+						
+<h4 class="changeTitle">11: Retoalimentaciones no generan eventos</h4>
+<p class="changeDesc">Las entradas binarias que están configuradas como retroalimentación ya generan eventos cuando se opera la salida binaria correspondiente.</p>
+						
+<h4 class="changeTitle">104: Selección de punto en ventana de dispositivo</h4>
+<p class="changeDesc">Ya no hay problemas para seleccionar un punto para modificarlo en Windows XP.</p>
+<!-- Start of StatCounter Code -->
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var sc_project=306503; 
+var sc_partition=1; 
+//]]>
+</script>
+
+<script language="javascript" src="http://www.statcounter.com/counter/counter.js" type="text/javascript">
+</script><noscript><a href="http://www.statcounter.com" target="_blank"><img alt="hit counter" src="http://c2.statcounter.com/counter.php?sc_project=306503&amp;java=0" border="0" /></a> </noscript>
+<!-- End of StatCounter Code -->
+	
+		
+		<p><em></em></p>
+		
+	</div>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-163328-1";
+urchinTracker();
+</script>
+
+</body>
+</html>
+
+   
