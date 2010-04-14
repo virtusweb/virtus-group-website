@@ -135,8 +135,8 @@ Si requiere más información por favor utilice alguna de nuestras [formas de co
 
 Vea también:
 
-* [xHosp - Sistema integral para la administración hospitalaria<][xhosp_home]
-* [xLab - Sistema para el control y operación de laboratorios clínicos<][xlab_home]
+* [xHosp - Sistema integral para la administración hospitalaria][xhosp_home]
+* [xLab - Sistema para el control y operación de laboratorios clínicos][xlab_home]
 * [xBlood - Sistema para el manejo de bancos de sangre][xray_home]
 
 [xhosp_home]: ../xhosp/index.html
