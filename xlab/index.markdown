@@ -7,7 +7,7 @@ title: xLab
 <div id="sidebar">
   <p><a href="request.html">Solicitud de información</a></p>
   <p><a href="xLab.pdf">Obtenga esta página en PDF</a></p>
-  <p><a href="HistoriaxLab.html">Historia de los cambios</a></p>
+  <p><a href="versiones/index.html">Historia de los cambios</a></p>
   <p><a href="../xlabweb/index.html">xLab por Internet</a></p>
 </div>		
 	
