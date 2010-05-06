@@ -6,7 +6,7 @@ title: xLab Versiones
 ### Historia de las versiones de xLab
 
 * Versión 1.8.8 (30/Mar/2010)
-* Versión 1.8.7 (31/Ene/2010)
+* [Versión 1.8.7 (31/Ene/2010)][v.1.8.7]
 * [Versión 1.8.6 (30/Ago/2009)][v.1.8.6]
 * [Versión 1.8.5 (30/Jun/2009)][v.1.8.5]
 * [Versión 1.8.4 (30/May/2009)][v.1.8.4]
@@ -16,7 +16,7 @@ title: xLab Versiones
 * Versión 1.8.0 (23/Ene/2009)
 
 [v-1-8-8]: 1-8-3/index.html
-[v-1-8-7]: 1-8-3/index.html
+[v.1.8.7]: 1.8.7/index.html
 [v.1.8.6]: 1.8.6/index.html
 [v.1.8.5]: 1.8.5/index.html
 [v.1.8.4]: 1.8.4/index.html
