@@ -7,7 +7,15 @@ title: xLab
 <div id="sidebar">
   <p><a href="request.html">Solicitud de información</a></p>
   <p><a href="xLab.pdf">Obtenga esta página en PDF</a></p>
-  <p><a href="versiones/index.html">Historia de los cambios</a></p>
+  <p><a href="versiones/index.html">Versiones</a></p>
+  <ul>
+    <li><a href="versiones/1.8.8/index.html">1.8.8 - Mar 2010</a></li>
+    <li><a href="versiones/1.8.7/index.html">1.8.7 - Ene 2010</a></li>
+    <li><a href="versiones/1.8.6/index.html">1.8.6 - Ago 2009</a></li>
+    <li><a href="versiones/1.8.5/index.html">1.8.5 - Jun 2009</a></li>
+    <li><a href="versiones/index.html">Anteriores...</a></li>
+
+  </ul>
   <p><a href="../xlabweb/index.html">xLab por Internet</a></p>
 </div>		
 	
